@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      font-style: normal;
+  }
+  @font-face {
+    font-family: "TTLakes";
+    src: local("TTLakes-Bold"),
+      url("fonts/AnyConv.com__TTLakes-Bold.woff2") format("woff2"),
+      url("fonts/TTLakes-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "TTLakes";
+    src: local("TTLakes-Medium"),
+      url("fonts/AnyConv.com__TTLakes-Medium.woff2") format("woff2"),
+      url("fonts/TTLakes-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "TTLakes";
+    src: local("TTLakes-Regular"),
+      url("fonts/AnyConv.com__TTLakes-Regular.woff2") format("woff2"),
+      url("fonts/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  .list-reset {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .btn-reset {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+.header{
+    width:320px;
+    height:88px;
+    padding: 24px 16px;
+    display:flex;
+    gap:16px;
+    align-items: center;
+    border-bottom:1px solid #D9FFF5;
+    background-color: white;
+}
+.header__divider{
+    display: inline-block;
+    width:2px;
+    height:32px;
+    background-color: #EAEAEA;
+}
+.h1{
+  width:320px;
+  height:40px;
+  margin-top:24px;
+  display:flex;
+  align-items: center;
+  gap:12px;
+}
+
+h1{
+  margin-right:16px;
+  white-space:nowrap;
+  font-size:28px;
+}
+body{
+  background-color: #F8F8F8;
+  font-family: "TTLakes", "Arial", sans-serif;
+}
+.scroll-menu {
+  width:304px;
+  height:40px;
+  overflow: auto;
+  display:flex;
+  white-space:nowrap;
+  margin-left:16px;
+}
+.scroll-menu__button{
+  width:246px;
+  height:40px;
+  padding-left:16px;
+  padding-top:8px;
+  padding-bottom:8px;
+  padding-right:9px;
+  color:#7E7E82;
+  font-weight: 500;
+}
+.scroll-menu__button:nth-child(1){
+  border: 2px solid #B8FFEC;
+  border-radius:5px;
+  background-color: white;
+  font-weight: 500;
+}
+main{
+  width:288px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.main-text{
+  font-size:14px;
+  color:#1B1C21;
+  font-weight: 400;
+}
+.read-more{
+  display:flex;
+  width:132px;
+  height:24px;
+  margin-top:16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.read-more__text{
+  font-weight: 500;
+}
+.img{
+  width:320px;
+  height:176px;
+  margin-left:0;
+  padding-left:0;
+  margin-top:56px;
+}
