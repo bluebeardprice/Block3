@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class ="body">
     <header class="header">
-        <div class="header__content--left">
-        <button class="header__button header-button--left-divider btn-reset"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+        <div class="header__content header__content--left">
+        <button class="header__button header__button--left-divider btn-reset"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="40" height="40" rx="20" fill="#FF3E79" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -47,7 +47,7 @@
                     stroke="#80949F" stroke-width="0.5" />
             </svg> 
             </div>
-            <div class="header__content--right">
+            <div class="header__content header__content--right">
             <div class="hidden-buttons">
         <button class="header__button btn-reset hidden-list"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -107,8 +107,8 @@
         </button>
 
     </header>
-    <div class="h1">
-            <h1><b>Услуги и сервисы</b></h1>
+    <div class="title">
+            <h1 class="title__h1">Услуги и сервисы</h1>
         <div class="headline-buttons">
             <button class="laptop-button btn-reset">Оставить заявку<svg width="40" height="40" viewBox="0 0 40 40"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,15 +134,16 @@
             </button>
         </div>
     </div>
-    <ul class="scroll-menu">
-        <li><button class="scroll-menu__button scroll-menu__button--first btn-reset"> Ремонтируемые бренды </button></li>
-        <li><button class="scroll-menu__button btn-reset"> Ремонтируемые устройства </button></li>
-        <li><button class="scroll-menu__button btn-reset"> Цены на услуги </button></li>
-        <li><button class="scroll-menu__button btn-reset"> Адреса сервисных центов </button></li>
-        <li><button class="scroll-menu__button btn-reset"> Специальные цены </button></li>
-        <li><button class="scroll-menu__button btn-reset"> Отзывы </button></li>
-    </ul>
-    <main>
+    <main class="main">
+        <ul class="scroll-menu main__scroll-menu">
+            <li><button class="scroll-menu__button scroll-menu__button--first btn-reset"> Ремонтируемые бренды </button></li>
+            <li><button class="scroll-menu__button btn-reset"> Ремонтируемые устройства </button></li>
+            <li><button class="scroll-menu__button btn-reset"> Цены на услуги </button></li>
+            <li><button class="scroll-menu__button btn-reset"> Адреса сервисных центов </button></li>
+            <li><button class="scroll-menu__button btn-reset"> Специальные цены </button></li>
+            <li><button class="scroll-menu__button btn-reset"> Отзывы </button></li>
+        </ul>
+        <div class="main-content">
         <div class="no-img">
             <div class="text">
                 <p class="main-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
@@ -152,10 +153,10 @@
                     тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
             </div>
                
-                <button class="read-more__text btn-reset"> Читать далее </button>
+                <button class="read-more-btn btn-reset"> Читать далее </button>
         </div>
-        <img class="img" src="img/_MG_3223.png">
-
+        <img class="img" src="./img/_MG_3223.png">
+        </div>
     </main>
 </body>
 

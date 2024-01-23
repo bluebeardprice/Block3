@@ -37,8 +37,8 @@ html {
   @font-face {
     font-family: "TTLakes";
     src: local("TTLakes-Bold"),
-      url("fonts/AnyConv.com__TTLakes-Bold.woff2") format("woff2"),
-      url("fonts/TTLakes-Bold.woff") format("woff");
+      url("./fonts/AnyConv.com__TTLakes-Bold.woff2") format("woff2"),
+      url("./fonts/TTLakes-Bold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -46,8 +46,8 @@ html {
   @font-face {
     font-family: "TTLakes";
     src: local("TTLakes-Medium"),
-      url("fonts/AnyConv.com__TTLakes-Medium.woff2") format("woff2"),
-      url("fonts/TTLakes-Medium.woff") format("woff");
+      url("./fonts/AnyConv.com__TTLakes-Medium.woff2") format("woff2"),
+      url("./fonts/TTLakes-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -55,8 +55,8 @@ html {
   @font-face {
     font-family: "TTLakes";
     src: local("TTLakes-Regular"),
-      url("fonts/AnyConv.com__TTLakes-Regular.woff2") format("woff2"),
-      url("fonts/TTLakes-Regular.woff") format("woff");
+      url("./fonts/AnyConv.com__TTLakes-Regular.woff2") format("woff2"),
+      url("./fonts/TTLakes-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -110,12 +110,13 @@ html {
   left: -20px;
 }
 
-.h1{
+.title{
   height:40px;
   margin-top:24px;
   position: relative;
+  margin-bottom: 24px;
 }
-.h1::before{
+.title::before{
   content:"";
   background-image: url(./img/highlight.svg);
   background-position: 0 0;
@@ -126,13 +127,13 @@ html {
   
 }
 
-h1{
+.title__h1{
   margin-right:16px;
   white-space:nowrap;
   font-size:28px;
   margin-left:16px;
 }
-body{
+.body{
   background-color: #F8F8F8;
   font-family: "TTLakes", "Arial", sans-serif;
 }
@@ -141,12 +142,13 @@ body{
   overflow: auto;
   display:flex;
   white-space:nowrap;
-  margin-left:16px;
-  margin-top:24px;
+  padding-left:16px;
   list-style: none;
 }
+.main__scroll-menu{
+  margin-bottom: 24px;
+}
 .scroll-menu__button{
-  height:40px;
   padding-left:16px;
   padding-top:8px;
   padding-bottom:8px;
@@ -182,12 +184,12 @@ main{
   margin-top:16px;
   margin-left: 16px;
 }
-.read-more__text{
+.read-more-btn{
   margin-left:48px;
   font-weight: 500;
   position:relative;
 }
-.read-more__text::before{
+.read-more-btn::before{
   content:"";
   background-image: url(./img/expand.svg);
   background-position: 0 0;
@@ -261,7 +263,7 @@ main{
     bottom:5px;
     left:60px;
   }
-  .h1{
+  .title{
     height:40px;
     margin-top:24px;
     display:flex;
@@ -270,10 +272,12 @@ main{
   }
   .scroll-menu {
     height:40px;
+  }
+  .main__scroll-menu{
     margin-left:24px;
     margin-top:32px;
   }
-  main{
+  .main-content{
     width:720px;
     height: 208px;
     align-items: center;
@@ -290,12 +294,12 @@ main{
     margin-left:0;
     margin-bottom: 0;
   }
-  .read-more__text{
+  .read-more-btn{
     font-weight: 500;
     margin-top: 10px;
 
   }
-  .read-more__text::before{
+  .read-more-btn::before{
     left:-30px;
     top:-3px;
   }
@@ -325,8 +329,12 @@ main{
   .header{
     display:none;
   }
-  .h1{
+  .title{
     margin-top: 42px;
+    margin-bottom: 0;
+  }
+  .main{
+    margin-top: 8px;
   }
   .scroll-menu {
     height:82px;
@@ -334,8 +342,10 @@ main{
     display:flex;
     white-space:nowrap;
     flex-wrap: wrap;
-    margin-left:32px;
-    margin-top:40px;
+  }
+  .main__scroll-menu{
+    margin-left:16px;
+    margin-top:0px;
     margin-right: 25px;
   }
   .laptop-button{
@@ -356,12 +366,12 @@ main{
     align-items: center;
     gap:30px;
   }
-  .h1{
+  .title{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  main{
+  .main-content{
     width:1056px;
     height: 307px;
     margin-right: 28px;
@@ -392,7 +402,7 @@ main{
     margin-top:0px;
     border-radius: 6px;
   }
-  .read-more__text{
+  .read-more__btn{
     font-weight: 500;
     margin-top: 0;
     margin-left:20px;
